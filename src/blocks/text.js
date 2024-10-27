@@ -27,6 +27,22 @@ const addText = {
   helpUrl: '',
 };
 
+
+const read = {
+  init: function() {
+    this.appendStatementInput('Read')
+    .setAlign(Blockly.inputs.Align.RIGHT)
+      .appendField('Read')
+      .appendField(new Blockly.FieldTextInput('default'), 'x');
+    this.setTooltip('');
+    this.setHelpUrl('');
+    this.setColour(195);
+  }
+};
+
+Blockly.common.defineBlocks({read: read});
+                    
+
 // Create the block definitions for the JSON-only blocks.
 // This does not register their definitions with Blockly.
 // This file has no side effects!

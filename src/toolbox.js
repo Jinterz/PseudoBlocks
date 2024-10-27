@@ -42,7 +42,7 @@ export const toolbox = {
         },
         {
           kind: 'block',
-          type: 'logic_null',
+          type: 'Read',
         },
         {
           kind: 'block',
